@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    padding:0;
+    background: #262626;
+}
+section{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:650px;
+    width:1200px;
+    background:grey;
+    box-shadow:0 10px 25px #fff;
+    display:flex;
+}
+.content
+{
+    width:calc(60% - 40px);
+    height:100%;
+    background:#25274D;
+    box-sizing:border-box;
+    padding:20px 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color:#fff;
+    font-family: 'Fresca', sans-serif;
+
+
+}
+.imageBox
+{
+    width:calc(40% + 40px);
+    height:100%;
+    background:oldlace;
+    box-sizing:border-box;
+    border-left:100px solid #25274D;
+    border-bottom:200px solid transparent;
+    background:url('https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/pushup1.gif?raw=true');
+    background-repeat:no-repeat;
+    background-size: 500px;
+    
+
+    
+    
+    
+    
+    /*background-position:  -90px -100px;*/
+
+
+}
