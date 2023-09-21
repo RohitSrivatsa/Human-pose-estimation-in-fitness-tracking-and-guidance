@@ -1,0 +1,224 @@
+<html>
+  <style>
+    :root {
+      --main-color: #ecf0f1;
+      --point-color: #555;
+      --size: 5px;
+    }
+    
+    .loader {
+      background-color: var(--main-color);
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0; left: 0;
+      display: flex;
+      align-items: center;
+      align-content: center; 
+      justify-content: center;  
+      z-index: -1;
+    }
+    
+    .loader__element {
+      border-radius: 100%;
+      border: var(--size) solid var(--point-color);
+      margin: calc(var(--size)*2);
+    }
+    
+    .loader__element:nth-child(1) {
+      animation: preloader .6s ease-in-out alternate ;
+    }
+    .loader__element:nth-child(2) {
+      animation: preloader .6s ease-in-out alternate .2s ;
+    }
+    
+    .loader__element:nth-child(3) {
+      animation: preloader .6s ease-in-out alternate .4s ;
+    }
+    
+    @keyframes preloader {
+      100% { transform: scale(2); }
+    }
+    @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+    
+    .wrapper{
+      position: fixed;
+      top: 95%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .link_wrapper{
+      position: relative;
+    }
+    
+    a{
+      display: block;
+      width: 250px;
+      height: 50px;
+      line-height: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      background: #333;
+      text-align: center;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 3px solid #333;
+      transition: all .35s;
+    }
+    
+    .icon{
+      width: 50px;
+      height: 50px;
+      border: 3px solid transparent;
+      position: absolute;
+      transform: rotate(45deg);
+      right: 0;
+      top: 0;
+      z-index: -1;
+      transition: all .35s;
+    }
+    
+    .icon svg{
+      width: 30px;
+      position: absolute;
+      top: calc(50% - 15px);
+      left: calc(50% - 15px);
+      transform: rotate(-45deg);
+      fill: black;
+      transition: all .35s;
+    }
+    
+    a:hover{
+      width: 200px;
+      border: 3px solid black;
+      background: transparent;
+      color: black;
+    }
+    
+    a:hover + .icon{
+      border: 3px solid black;
+      right: -25%;
+    }
+    
+    .circle-wrapper {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin: 10px;
+    }
+    
+    .icon {
+      position: absolute;
+      color: #fff;
+      font-size: 55px;
+      top: 55px;
+      left: 55px;
+      transform: translate(-50%, -50%);
+    }
+    
+    .circle {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      padding: 2.5px;
+      background-clip: content-box;
+      animation: spin 10s linear infinite;
+    }
+    
+    .circle-wrapper:active .circle {
+      animation: spin 2s linear infinite;
+    }
+    
+    .success {
+      /* background-color: #000000; */
+      border: 2.5px dashed #4e4d4d;
+    }
+    
+    #counter1{
+      color: #fff;
+      border-radius: 80px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: 100px;
+      margin-left: 350px;
+      margin-top: -50px;
+      /* margin-top: -45px; */
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+    #counter2{
+      color: #fff;
+      border-radius: 80px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: 100px;
+      margin-right: 200px ;
+      /* margin-left: 280px; */
+      margin-top: -50px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+    /* .counter{
+      display: inline;
+    } */
+    #backbone{
+      
+      color: #000;
+     
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+      align-items: center;
+      justify-content: center;
+      
+      margin-left: 200px;
+      
+    }
+    
+    #error{
+      color: #000;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+     
+      align-items: center;
+      justify-content: center;
+      
+      margin-left: 200px;
+     
+    }
+    .warning {
+      /* background-color: #000000; */
+      border: 2.5px dashed #4e4d4d;
+    }
+    
+    @keyframes spin { 
+      100% { 
+        transform: rotateZ(360deg);
+      }
+    }
+    
+    .page-wrapper {
+      height: 100vh;
+     
+    }
+    
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d/control_utils_3d.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      alert("Please perform the exercises at a normal pace for count down");
+      </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">

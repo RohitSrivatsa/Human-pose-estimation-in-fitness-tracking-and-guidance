@@ -1,0 +1,106 @@
+<%- include('partials/header'); %>
+
+     <style>
+     body{
+    margin:0;
+    padding:0;
+    background: #262626;
+}
+section{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:650px;
+    width:1200px;
+    background:grey;
+    box-shadow:0 10px 25px #fff;
+    display:flex;
+}
+.content
+{
+    width:calc(60% - 40px);
+    height:100%;
+    background:#25274D;
+    box-sizing:border-box;
+    padding:20px 20px;
+    font-size: 15px;
+    line-height: 25px;
+    color:#fff;
+    font-family: 'Fresca', sans-serif;
+
+
+}
+.imageBox
+{
+    margin-top: 20px;;
+    width:calc(40% + 40px);
+    height:100%;
+    background:oldlace;
+    box-sizing:border-box;
+    border-left:100px solid #25274D;
+    border-bottom:200px solid transparent;
+    background:url('https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/ab1.png?raw=true');
+    background-repeat:no-repeat;
+    background-size: 500px;
+}
+
+    
+    h1{
+        color:#ffffff;
+    }
+    
+    
+    /*background-position:  -90px -100px;*/
+
+
+
+     
+     
+     </style>
+
+
+     <body>
+        <section>
+            <div class="content">
+                <h1>POSE ESTIMATION</h1>
+                <p>
+                    Pose estimation is the task of using an ML model to estimate the pose of a person from an 
+                    image or a video by estimating the spatial locations of key body joints (keypoints).
+                </p>
+             <p>
+                 <h2 style="color: #ffffff;"> MODEL DESCRIPTION</h2>
+                 <p>Pose estimation refers to computer vision techniques that detect human figures in images
+                      and videos, so that one could determine, for example, where someone’s elbow shows up in an 
+                      image. It is important to be aware of the fact that pose estimation merely estimates where 
+                      key body joints are and does not recognize who is in an image or video.</p>
+               <h1> MEDIAPIPE POSE</h1>
+               
+            <p>MediaPipe Pose is a ML solution for high-fidelity body pose tracking, inferring 33 3D landmarks 
+                on the whole body from RGB video frames utilizing our BlazePose research that also powers the ML
+                 Kit Pose Detection API. Current state-of-the-art approaches rely primarily on powerful desktop
+                  environments for inference, whereas our method achieves real-time performance on most modern 
+                  mobile phones, desktops/laptops, in python and even on the web.
+          
+             </p></div>
+             
+            <div class="imageBox">
+                <h6 style="color: #ffffff; margin-top: 550px;margin-right:100px ;">For more information on mediapipe pose, visit <a href="https://google.github.io/mediapipe/solutions/pose.html">mediapipe/solutions/</a></h6>
+  
+            </div>
+
+            <img style="height: 200px;width: 200px; margin-top: 320px;" src="https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/home2.jpg?raw=true"/>
+
+        </section>
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+	<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/24884970.js"></script>
+<!-- End of HubSpot Embed Code -->
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<%- include('partials/header3'); %>
+  <style>
+    #error {
+      color: #000;
+      font-size: 20px;
+
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+
+    }
+  </style>
+
+  <script type="module" src="./js/yogadet.js"></script>
+  </head>
+
+  <body>
+    <div class="card text-center" style="height: 630px;width: 1300px;margin: auto;">
+      <div class="card-body">
+        <video class="input_video"></video>
+        <canvas class="output_canvas" height="600px" width="1200px"></canvas>
+      </div>
+      <div class="card-footer" style="margin-top: 10px;">
+        <p id="error">Try till you get the pose right</p>
+      </div>
+    </div>
+
+
+  </body>
+
+  </html>

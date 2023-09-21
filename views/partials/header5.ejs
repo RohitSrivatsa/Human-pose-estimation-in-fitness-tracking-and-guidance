@@ -1,0 +1,178 @@
+<html>
+    <title>Exercises</title>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="public/css/data.css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fresca&family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+/*** VARIABLES ***/
+/* Colors */
+/*** EXTEND ***/
+/* box-shadow */
+ ol.gradient-list > li, ol.gradient-list > li::before {
+	 box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+/*** STYLE ***/
+ *, *:before, *:after {
+	 box-sizing: border-box;
+}
+ html, body {
+	 margin: 0;
+	 padding: 0;
+}
+ body {
+	 background-color: #fafafa;
+	 color: #1d1f20;
+	 font-family: 'Raleway', sans-serif;
+}
+ main {
+	 display: block;
+	 margin: 0 auto;
+	 max-width: 40rem;
+	 padding: 1rem;
+}
+ ol.gradient-list {
+	 counter-reset: gradient-counter;
+	 list-style: none;
+	 margin: 1.75rem 0;
+	 padding-left: 1rem;
+}
+ ol.gradient-list > li {
+	 background: white;
+	 border-radius: 0 0.5rem 0.5rem 0.5rem;
+	 counter-increment: gradient-counter;
+	 margin-top: 1rem;
+	 min-height: 3rem;
+	 padding: 1rem 1rem 1rem 3rem;
+	 position: relative;
+}
+ ol.gradient-list > li::before, ol.gradient-list > li::after {
+	 background: linear-gradient(135deg, #8cb4b3 0%, #4b4d49 100%);
+	 border-radius: 1rem 1rem 0 1rem;
+	 content: '';
+	 height: 3rem;
+	 left: -1rem;
+	 overflow: hidden;
+	 position: absolute;
+	 top: -1rem;
+	 width: 3rem;
+}
+ ol.gradient-list > li::before {
+	 align-items: flex-end;
+	 content: counter(gradient-counter);
+	 color: #1d1f20;
+	 display: flex;
+	 font: 900 1.5em/1 'Montserrat';
+	 justify-content: flex-end;
+	 padding: 0.125em 0.25em;
+	 z-index: 1;
+}
+ ol.gradient-list > li:nth-child(10n+1):before {
+	 background: linear-gradient(135deg, rgba(98, 106, 90, 0.2) 0%, rgba(159, 155, 133, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+2):before {
+	 background: linear-gradient(135deg, rgba(157, 170, 144, 0.4) 0%, rgba(120, 116, 101, 0.4) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+3):before {
+	 background: linear-gradient(135deg, rgba(101, 109, 93, 0.6) 0%, rgba(96, 94, 84, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+4):before {
+	 background: linear-gradient(135deg, rgba(93, 98, 88, 0.8) 0%, rgba(58, 56, 48, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+5):before {
+	 background: linear-gradient(135deg, rgb(97, 101, 93) 0%, rgb(60, 58, 48) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+6):before {
+	 background: linear-gradient(135deg, rgba(119, 125, 113, 0.8) 0%, rgba(61, 59, 49, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+7):before {
+	 background: linear-gradient(135deg, rgba(88, 97, 79, 0.6) 0%, rgba(56, 53, 39, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+8):before {
+	 background: linear-gradient(135deg, rgba(85, 93, 77, 0.4) 0%, rgba(64, 61, 47, 0.4) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+9):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+10):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0) 0%, rgba(253, 220, 50, 0) 100%);
+}
+ ol.gradient-list > li + li {
+	 margin-top: 2rem;
+}
+ 
+
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: 0.04em;
+}
+body {
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+}
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+h1 {
+	display: inline-block;
+	color: white;
+	font-family: 'Righteous', serif;
+	font-size: 5em; 
+	text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+	}
+	h1:after {
+	  content: attr(data-shadow);
+	  position: absolute;
+	  top: .06em; left: .06em;
+	  z-index: -1;
+	  text-shadow: none;
+	  background-image:
+		linear-gradient(
+		  45deg,
+		  transparent 45%,
+		  hsla(48,20%,90%,1) 45%,
+		  hsla(48,20%,90%,1) 55%,
+		  transparent 0
+		  );
+	  background-size: .05em .05em;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	
+	  animation: shad-anim 15s linear infinite;
+	  }
+  
+  @keyframes shad-anim {
+	0% {background-position: 0 0}
+	0% {background-position: 100% -100%}
+	}
+
+	.section1{
+		background-color: #517c98 ;
+		font-family: 'Fresca', sans-serif;
+	}
+	.section2{
+		background-color: #AAABB8;
+		font-family: 'Fresca', sans-serif;
+	}
+	.section3{
+		background-color: #464866 ;
+		font-family: 'Fresca', sans-serif;
+	}
+
+
+    </style>
+    
+    </head>

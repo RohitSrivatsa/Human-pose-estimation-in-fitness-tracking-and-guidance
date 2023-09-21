@@ -1,0 +1,375 @@
+<%- include('partials/header'); %>
+
+<style>
+body{
+ background: linear-gradient(-235deg, #25274D 0%, #464866 55%, #AAABB8 100%);
+}
+#title{
+  background-image: url('https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/home1.png?raw=true');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+}
+h1{
+
+  color: #ffffff;
+  font-family: 'Fresca', sans-serif;
+  font-size: 45px;
+
+}
+h2{
+
+  color: #ffffff;
+  font-family: 'Fresca', sans-serif;
+
+}
+.bo{
+  text-decoration: none;
+  color: #ffffff;
+}
+#service{
+    z-index:0;
+margin-top: 20px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .services-area {
+    padding-top: 75px;
+    padding-bottom: 80px; } }
+
+.single-services {
+  padding: 50px 30px;
+  background-color: #fff;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .single-services {
+      padding: 30px 10px; } }
+  @media (max-width: 767px) {
+    .single-services {
+      padding: 30px 10px; } }
+  .single-services .services-icon i {
+    font-size: 52px;
+    color: #25274D;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+  .single-services .services-content .services-title {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+    .single-services:hover {
+    background-color: #29648A; }
+    .single-services:hover .services-icon i {
+      color: #25274D; }
+    .single-services:hover .services-content .services-title,
+    .single-services:hover .services-content p {
+      color: #25274D; }
+#features{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index:0;
+}
+.card{
+  height:440px;margin-left: 10px;
+  margin-top: 10px;
+  background-color: #29648A;
+  color: #fff;
+}
+.card-img-top{
+  height: 200px;
+  width:285px;
+}
+
+#testimonials{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  background-color: grey;
+  color: #fff;
+}
+.carousel-item{
+  padding: 7% 15%;
+}
+
+.testimonial-image{
+  float: right;
+  width: 30%;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+/* About page */
+
+
+.sp{
+  height:300px;
+  width:300px;
+}
+
+h3{
+  color:#ffffff;
+}
+
+a{
+  text-decoration:none;
+  color:#ffffff;
+}
+a:hover{
+  color: #000000;
+}
+
+.prim{
+  text-decoration:none;
+  color:black;
+}
+.prim:hover{
+  color: #fff;
+}
+
+
+
+</style>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h1 class="mb-4">Welcome <%= name %></h1>
+          <section id="title">
+<div class="container-fluid">
+
+
+
+  <div class="row">
+
+        <div class="col-lg-6">
+
+        </div>
+
+
+      <div class="col-lg-6">
+        <br><br><br>
+        <h1>Your Fitness is our priority!</h1>
+        <p>Working out is important. But are you doing it right?</p>
+        <p>With our application you can check out if your posture is right while working out!</p>
+        <br>
+        <br>
+
+<button type="button" class="btn btn-dark btn-lg download-button" style="background-color:grey"><a class="bo" href="/exer_main">
+  <i class="fas fa-dumbbell mr-3"></i>Check it out Now!</button></a>
+
+  <br><br><br>
+      </div>
+    </div>
+
+
+
+  </div>
+    </section>
+
+
+<section id="service" class="services-area pt-125 pb-130 gray-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-title text-center pb-20">
+                            <h2 class="sub-title mb-15">Our Services</h2>
+
+                        </div> <!-- section title -->
+                    </div>
+                </div> <!-- row -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                            <div class="services-icon">
+                                <i class="icon fa fa-handshake-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="services-content mt-15">
+                                <h4 class="services-title">User Friendly</h4>
+                                <p class="mt-20">Choose your favourite work-out type and jump right into it.
+    </p>
+                            </div>
+                        </div> <!-- single services -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
+                            <div class="services-icon">
+                              <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="services-content mt-15">
+                                <h4 class="services-title">Informative</h4>
+                                <p class="mt-20">Do not know how to perform the exercise? We got your back!</p>
+                            </div>
+                        </div> <!-- single services -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                            <div class="services-icon">
+                              <i class="fas fa-desktop"></i>
+                            </div>
+                            <div class="services-content mt-15">
+                                <h4 class="services-title">Monitored</h4>
+                                <p class="mt-20">We monitor your workout session by setting count downs</p>
+                            </div>
+                        </div> <!-- single services -->
+                    </div>
+
+
+                        </div> <!-- single services -->
+                    </div>
+
+
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </section>
+
+        <section id="features">
+        <h1>Health and Food</h1>
+      <div class="row">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 feature-box">
+        <div class="card" style="width: 18rem;">
+    <img src="https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/img.jpg?raw=true" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Healthy Diet</h5>
+      <p class="card-text">Emphasizes fruits, vegetables, whole grains, and fat-free or low-fat milk and milk products... </p>
+
+      <a href="/diet" class="prim">Know More</a>
+    </div>
+  </div>
+      </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 feature-box">
+          <div class="card" style="width: 18rem;">
+            <img src="https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/mhealth.jpg?raw=true" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Mental Health</h5>
+      <p class="card-text">How to look after your mental health using exercise..</p>
+      <a href="/mentalh" class="prim" >Know More</a>
+    </div>
+  </div>
+        </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 feature-box">
+        <div class="card" style="width: 18rem;">
+          <img src="https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/sleep1.jpg?raw=true" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Good Sleep</h5>
+      <p class="card-text"> According to the Centers for Disease Control and Prevention, more than 35 percent of people are sleep deprived, ....</p>
+      <a href="/sleep" class="prim" >Know More</a>
+    </div>
+  </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 feature-box">
+        <div class="card" style="width: 18rem;">
+          <img src="https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/exer.jpg?raw=true" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Efficient Exercise</h5>
+      <p class="card-text"> You've probably heard countless times how exercise is "good for you." But did you know that it can help you feel good too?...</p>
+      <a href="/exer" class="prim">Know More</a>
+    </div>
+  </div>
+      </div>
+
+
+
+      </div>
+
+
+        </section>
+
+
+<h1 style="margin-left:20px ;"> Fitness Influencers</h1>
+
+<section id="testimonials">
+
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h6>Kayla Itsines is 4 million followers strong, and in my opinion, is the ‘Godfather’ 
+          of personal trainers on Instagram. She has built a fitness empire, and quite literally an 
+          army (“#Kayla’s Army”) from scratch. She started out posting “before and after” pictures of her
+           personal clients, and quickly garnered attention due to the dramatic results.Kayla even hosts
+            meet-ups around the world, in which girls attend her Boot Camps just get their butt kicked by 
+            Kayla in person!</h6>
+            <img class="testimonial-image" src="https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/test2.jpg?raw=true" alt="man-profile">
+          <br><br>
+           <h3><em> Kayla Itsines<a href="https://www.instagram.com/kayla_itsines/"></em></h3>
+         <h4> <i class="fab fa-instagram"> @kayla_itsines </i></a></h4>
+        </div>
+        <div class="carousel-item">
+          <h6 class="testimonial-text">Lita Lewis is a health coach and mother of four children
+           whose Instagram blog shows that staying fit is for all bodies in all shapes and sizes.
+            Her photos include inspirational quotes about self-empowerment and images of her working out
+             in fun, beachy settings. She was born in Los Angeles and raised in Sydney, Australia, and 
+             once again lives in LA. She motivates others through redefining the meaning of fitness, being a 
+             life coach, and hoasting intense bodyblast bootcamps.</h6>
+
+             <img class="testimonial-image" src="https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/test1.jpg?raw=true" alt="lady-profile">
+          <br><br>
+           <h3><em>Lita Lewis<a href="https://www.instagram.com/followthelita/"></em></h3>
+         <h4> <i class="fab fa-instagram"> @followthelita </i></a></h4>
+        </div>
+
+        <div class="carousel-item">
+          <h6>Faya is a Swedish personal trainer and fitness blogger based in London. 
+          Her Instagram is filled with beautiful, bright pictures of yummy foods, 
+          cute activewear outfits, as well as diet and exercise tips. Her fitness blog is full of recipes, 
+          training tips and personal fitness exploits. She also has an E-Book, 
+          “The Four-Week Fitness & Food Effect”, inspired by sensible and scientific information
+           that is sustainable for a longer-term healthy lifestyle.</h6>
+           <img class="testimonial-image" src="https://github.com/NiharikaDinesh/MajorProject-Images-/blob/main/test3.jpg?raw=true" alt="lady-profile">
+          <br><br>
+          <h3><em>Faya <a href="https://www.instagram.com/fitnessontoast/"></em></h3>
+         <h4> <i class="fab fa-instagram"> @fitnessontoast </i></a></h4>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+</section>
+
+
+
+
+
+      </div>
+		</div>
+
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/24884970.js"></script>
+<!-- End of HubSpot Embed Code -->
+  </body>
+</html>

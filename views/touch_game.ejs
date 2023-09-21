@@ -1,0 +1,171 @@
+<%- include('partials/header2'); %>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <style>
+    #error {
+      color: #000;
+      font-size: 20px;
+
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    #counter {
+      color: #000;
+      font-size: 20px;
+
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:-20px;
+      justify-content: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    #counter1{
+  color: #fff;
+  border-radius: 50px;
+  background-color: rgb(49, 38, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  
+  /* margin-top: -45px; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#counter2{
+  color: #fff;
+  border-radius: 50px;
+  background-color: rgb(49, 38, 62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin-left: 350px;
+  /* margin-left: 280px; */
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+#counter1 {
+  
+  box-shadow: 0 0 0 1.875vmin, inset 3.75vmin 3.75vmin 7.5vmin rgba(200, 161, 161, 0.125), 3.75vmin 3.75vmin 7.5vmin rgba(0, 0, 0, 0.125);
+  font-size: 20.5vmin;
+  text-shadow: 3.75vmin 3.75vmin 7.5vmin rgba(167, 54, 54, 0.125);
+  
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  border-radius: 50%;
+  font-weight: 600; }
+  @media (min-width: 600px) {
+    #counter1 {
+      width: 40vmin;
+      height: 40vmin;
+      box-shadow: 0 0 0 1.25vmin, inset 2.5vmin 2.5vmin 5vmin rgba(0, 0, 0, 0.125), 2.5vmin 2.5vmin 5vmin rgba(108, 84, 84, 0.125);
+      font-size: 12vmin;
+      text-shadow: 2.5vmin 2.5vmin 5vmin rgba(0, 0, 0, 0.125); } }
+
+
+      #counter2 {
+  
+  box-shadow: 0 0 0 1.875vmin, inset 3.75vmin 3.75vmin 7.5vmin rgba(0, 0, 0, 0.125), 3.75vmin 3.75vmin 7.5vmin rgba(0, 0, 0, 0.125);
+  font-size: 20.5vmin;
+  text-shadow: 3.75vmin 3.75vmin 7.5vmin rgba(0, 0, 0, 0.125);
+  
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  border-radius: 50%;
+  font-weight: 600; }
+  @media (min-width: 600px) {
+    #counter2 {
+      width: 40vmin;
+      height: 40vmin;
+      box-shadow: 0 0 0 1.25vmin, inset 2.5vmin 2.5vmin 5vmin rgba(0, 0, 0, 0.125), 2.5vmin 2.5vmin 5vmin rgba(0, 0, 0, 0.125);
+      font-size: 12vmin;
+      text-shadow: 2.5vmin 2.5vmin 5vmin rgba(0, 0, 0, 0.125); } }
+
+
+</style>
+<script type="module" src=<%=p1 %>>  </script>
+       
+</head>
+
+<body>
+  
+  <div class="container" style="margin-right: 0px;
+  margin-left: 20px;
+  height: 40px;
+  width: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;">
+    
+    <div class="row" style="height: 50px; width:50px">
+    <div class="col" style="padding-right: 0px; margin-left: 90px; margin-top: 350px; padding-left: 10px;">
+      
+      <p id="counter1" style="height: 150px ; width:150px; text-shadow:0px 5px 10px orange;">30
+      </p>
+    </div>
+      </div>
+      </div>
+
+
+      <div class="container" style="height: 580px ;">
+      <div class="row" style="height: 580px ;">
+        <div class="col" style="margin-left: 25px ; height: 580px;">
+        <video class="input_video"></video>
+            <canvas class="output_canvas" height="610px" width="1240px"></canvas>
+
+            <div class="card-footer" style="margin-top:0px; margin-bottom:0px; height: 90px;width: 1240px;">  
+              
+              <center><b><p id="backbone"></p>
+                <p id="error">Enjoy the Game!</p>
+                <p id = "counter"></p></b>
+              </center>
+          </div>   
+          
+      </div>
+    </div>
+      
+    <div class="container" style=" margin-left: 960px;
+    
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 0px;">
+      
+      <div class="row" >
+      <div class="col" style="margin-top: -287.5px;">
+        <p id="counter2" style="height: 150px ; width:150px; margin-left: 300px; text-shadow:0px 5px 10px orange;">0</p>
+      </div>
+        </div>
+        </div>
+      
+    
+  </div>
+
+
+
+
+ 
+  
+
+
+  </body>
+</html>

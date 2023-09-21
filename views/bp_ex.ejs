@@ -1,0 +1,87 @@
+<%- include('partials/header5'); %>
+    <body>
+   
+<div class="section1" style="font-size: 20px;" >
+  <h1 data-shadow="body part" style=" margin-left: 20px; "><%= p1 %></h1>
+  <hr>
+  <h2 style=" margin-left: 50px; color: aliceblue;" ><%= p2 %></h2>
+  <p style=" margin-left: 50px; color: aliceblue;"><%= p3 %></p>
+  <div class="row" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;">
+    <div class="col" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;" >
+      <img  style="height: 400px;width:400px;" src=<%= p11 %>>
+      
+    </div>
+    <div class="col" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;" >
+      <img  style="height: 400px;width:400px;" src=<%= p12 %>>
+    </div>
+  </div>
+
+  <main>
+    <h3 style=" color: aliceblue;">Steps to perform the exercise</h3>
+      <ol class="gradient-list">
+        <% for(var i=0; i < p4.length; i++) { %>
+          
+            <li><%= p4[i] %></li>
+                     
+       <% } %>
+        
+      </ol>
+    </main>
+</div>
+
+<div class="section2" style="font-size: 20px;">
+  <br>
+    <h2 style=" margin-left: 50px; color: aliceblue;"><%= p5 %></h2>
+    <p style=" margin-left: 50px; color: aliceblue;"><%= p6 %></p>
+    <div class="row" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;">
+      <div class="col" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;" >
+        <img style="height: 400px;width:400px;" src=<%= p13 %>>
+   
+      </div>
+      <div class="col" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;">
+        <img style="height: 400px;width:400px;" src=<%= p14 %>>
+      </div>
+    </div>
+ 
+    <main>
+      <h3 style=" color: aliceblue;">Steps to perform the exercise</h3>
+      <ol class="gradient-list">
+        <% for(var i=0; i < p7.length; i++) { %>
+          
+            <li><%= p7[i] %></li>
+                     
+       <% } %>
+        
+      </ol>
+      </main>
+</div>
+
+<div class="section3" style="font-size: 20px;">
+  <br>
+    <h2 style=" margin-left: 50px; color: aliceblue;" ><%= p8 %></h2>
+    <p style=" margin-left: 50px; color: aliceblue;"><%= p9 %></p>
+    <div class="row" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;">
+      <div class="col" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;" >
+        <img style="height: 400px;width:400px;" src=<%= p15 %>>
+   
+      </div>
+      <div class="col" style="margin-bottom: 30px;margin-top:50px;margin-right: 0; margin-left: 50px;" >
+        <img style="height: 400px;width:400px;" src=<%= p16 %>>
+      </div>
+    </div>
+ 
+    <main>
+      <h3 style=" color: aliceblue;">Steps to perform the exercise</h3>
+      <ol class="gradient-list">
+        <% for(var i=0; i < p10.length; i++) { %>
+          
+            <li><%= p10[i] %></li>
+                     
+       <% } %>
+        
+      </ol>
+      </main>
+</div>
+
+</body>
+</html>
