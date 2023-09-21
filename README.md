@@ -1,6 +1,6 @@
 # Physical-Aptitude-Monitor
 
-This repository contains code and documents related to my Mini Project 
+This repository contains code and documents related to my Final year Project 
 
 ## Tools/IDE : 
 #### Programming Language: Javascript
